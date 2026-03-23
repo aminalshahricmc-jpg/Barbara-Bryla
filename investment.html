@@ -2,23 +2,37 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Inwestycje</title>
+<title>Investment</title>
 <style>
-body { font-family: Arial; text-align: center; background: #0b1a2f; color: white; }
-button { padding: 12px; width: 250px; margin: 10px; background: gold; border: none; cursor: pointer; }
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+button {
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
 
 <h2>Wybierz plan</h2>
 
-<button onclick="showMsg()">200 PLN - 2000 PLN tygodniowo</button><br>
-<button onclick="showMsg()">400 PLN - 4000 PLN tygodniowo</button><br>
-<button onclick="showMsg()">600 PLN - 6000 PLN tygodniowo</button>
+<button onclick="alertMsg()">200 PLN - 2000 PLN tygodniowo</button><br>
+<button onclick="alertMsg()">400 PLN - 4000 PLN tygodniowo</button><br>
+<button onclick="alertMsg()">600 PLN - 6000 PLN tygodniowo</button>
 
 <script>
-function showMsg() {
-    alert("Idź i dokonaj depozytu, aby rozpocząć inwestowanie");
+function alertMsg(){
+    alert("Przejdź do depozytu, aby rozpocząć inwestycję");
 }
 </script>
 
