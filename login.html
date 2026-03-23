@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Logowanie</title>
+<style>
+body { font-family: Arial; text-align: center; background: #0b1a2f; color: white; }
+.container { margin-top: 150px; }
+input, button { padding: 10px; width: 250px; margin: 10px; }
+button { background: gold; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Logowanie</h2>
+
+<input type="email" id="email" placeholder="Wpisz email"><br>
+<button onclick="login()">Zaloguj</button>
+
+</div>
+
+<script>
+function login() {
+    var email = document.getElementById("email").value;
+    if(email === "bronislaw@interia.eu") {
+        window.location.href = "homepage.html";
+    } else {
+        alert("Nieprawidłowy email");
+    }
+}
+</script>
+
+</body>
+</html>
