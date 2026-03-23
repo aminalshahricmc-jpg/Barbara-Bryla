@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Withdrawal</title>
+<style>
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+input, select, button {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    border: none;
+}
+button {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Wypłata</h2>
+
+<select>
+<option>PKO Bank Polski</option>
+<option>mBank</option>
+<option>ING Bank Śląski</option>
+<option>Santander Bank Polska</option>
+<option>Alior Bank</option>
+<option>Bank Pekao</option>
+</select><br>
+
+<input type="text" placeholder="Nazwa konta"><br>
+<input type="text" placeholder="Numer konta"><br>
+<input type="number" placeholder="Kwota"><br>
+
+<button onclick="withdraw()">Wypłać</button>
+
+<script>
+function withdraw(){
+    alert("Aktywuj konto i rozpocznij inwestowanie");
+}
+</script>
+
+</body>
+</html>
